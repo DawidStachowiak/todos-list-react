@@ -1,10 +1,10 @@
-
 import "./style.css";
 
 const Tasks = ({ tasks, hideTasksDone }) => (
   <ul className="main__unorderList">
     {tasks.map((task) => (
-      <li key = {task.id}
+      <li
+        key={task.id}
         className={`list__item ${
           task.done && hideTasksDone ? "list__item--hide" : ""
         }`}
