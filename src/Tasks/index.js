@@ -1,10 +1,11 @@
+
 import "./style.css";
 
 const Tasks = ({ tasks, hideTasksDone }) => (
   <ul className="main__unorderList">
     {tasks.map((task) => (
-      <li
-        className={`list__item"${
+      <li key = {task.id}
+        className={`list__item ${
           task.done && hideTasksDone ? "list__item--hide" : ""
         }`}
       >
@@ -12,7 +13,7 @@ const Tasks = ({ tasks, hideTasksDone }) => (
           {task.done ? "✔" : ""}
         </button>
         <span
-          className={`taskList__span${
+          className={`taskList__span ${
             task.done ? "taskList__span--done" : ""
           }`}
         >
