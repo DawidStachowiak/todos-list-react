@@ -21,7 +21,7 @@ function App() {
    body={<Form/>} 
    />
 
-   <MainSection tile="Lista zadań"
+   <MainSection tile = "Lista zadan"
    body = {<Tasks tasks = {tasks} hideTasksDone = {hideTasksDone}/>}
     
   extraHeaderContent = {<Buttons tasks ={tasks} hideTasksDone ={hideTasksDone} />}

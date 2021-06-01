@@ -1,3 +1,5 @@
+import "./style.css"
+
 const Buttons = ({tasks, hideTasksDone}) =>{
     if (!tasks.length) {
         return null
