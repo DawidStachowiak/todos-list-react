@@ -1,3 +1,20 @@
+
+# Simple project in the course Youcode
+
+## Demo
+ [](myLib/README.md)https://dawidstachowiak.github.io/to-do-list-React/
+
+![](https://github.com/DawidStachowiak/To-do-list/raw/master/image/toDoList.gif "")
+
+## Used technologies 
+
+- HTML
+- CSS
+- JAVA SCRIPT
+- REACT
+- BEM
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
