@@ -28,6 +28,7 @@
   border: none;
   color: #fff;
   transition: 0.5s;
+  cursor: pointer;
 }
 
 .done__button:hover {
@@ -41,6 +42,7 @@
   border: none;
   color: #fff;
   transition: 0.5s;
+  cursor: pointer;
 }
 
 .remove__button:hover {

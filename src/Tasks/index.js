@@ -1,7 +1,7 @@
 import "./style.css";
 
 const Tasks = ({ tasks, hideTasksDone }) => (
-  <ul className="main__unorderList">
+  <ul className="section__list">
     {tasks.map((task) => (
       <li
         key={task.id}
