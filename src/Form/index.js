@@ -1,7 +1,7 @@
 import "./style.css";
 
 const Form = () => (
-  <div className="main__form">
+  <div className="section__form">
     <form className="form ">
       <input
         className="form__input js-new__task"
