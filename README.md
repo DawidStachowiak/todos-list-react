@@ -14,5 +14,3 @@
 - REACT
 - BEM
 - BABEL
-
-
