@@ -6,10 +6,6 @@
   grid-auto-rows: minmax(65px, auto);
 }
 
-.section__form {
-  padding: 10px;
-}
-
 .section__item {
   border-bottom: 3px solid #efefef;
   display: grid;
