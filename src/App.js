@@ -37,7 +37,11 @@ setTasks(tasks => tasks.filter(task =>task.id !== id));
         return task;
     }));
 
-  }
+  };
+
+  const setAllDone = () =>{
+    setTasks(tasks => tasks.map(task =>({...task, done: true})));
+  };
   return (
     <Container>
       <Header title="Lista zadań" />
@@ -45,9 +49,16 @@ setTasks(tasks => tasks.filter(task =>task.id !== id));
 
       <Section
         title="Lista zadań"
-        body={<Tasks tasks={tasks} hideTasksDone={hideTasksDone} removeTask={removeTask} toglleTaskDone={toglleTaskDone} />}
+        body={<Tasks tasks={tasks} 
+        hideTasksDone={hideTasksDone} 
+        removeTask={removeTask} 
+        toglleTaskDone={toglleTaskDone}
+         />}
         extraHeaderContent={
-          <Buttons tasks={tasks} hideTasksDone={hideTasksDone} toggleHideDone={toggleHideDone} />
+          <Buttons tasks={tasks} 
+          hideTasksDone={hideTasksDone} 
+          toggleHideDone={toggleHideDone}
+          setAllDone ={setAllDone} />
         }
       />
     </Container>
