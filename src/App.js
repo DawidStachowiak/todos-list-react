@@ -28,6 +28,16 @@ function App() {
 setTasks(tasks => tasks.filter(task =>task.id !== id));
   };
 
+  const toglleTaskDone = (id) =>{
+    setTasks(tasks => tasks.map(task =>{
+
+        if(task.id === id) {
+          return{...task, done: !task.done};
+        }
+        return task;
+    }));
+
+  }
   return (
     <Container>
       <Header title="Lista zadań" />
@@ -35,7 +45,7 @@ setTasks(tasks => tasks.filter(task =>task.id !== id));
 
       <Section
         title="Lista zadań"
-        body={<Tasks tasks={tasks} hideTasksDone={hideTasksDone} removeTask={removeTask} />}
+        body={<Tasks tasks={tasks} hideTasksDone={hideTasksDone} removeTask={removeTask} toglleTaskDone={toglleTaskDone} />}
         extraHeaderContent={
           <Buttons tasks={tasks} hideTasksDone={hideTasksDone} toggleHideDone={toggleHideDone} />
         }
