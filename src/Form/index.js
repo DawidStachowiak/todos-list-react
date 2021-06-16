@@ -5,6 +5,9 @@ const Form = ({ addNewTask }) => {
   const [newtaskContent, setNewTaskContent] = useState("");
   const onFormSubmit = (event) => {
     event.preventDefault();
+    if (newtaskContent.trim() === "") {
+      return;
+    }
     addNewTask(newtaskContent.trim());
     setNewTaskContent("");
   };
@@ -19,8 +22,7 @@ const Form = ({ addNewTask }) => {
       />
       <button className="form__button ">Dodaj zadanie</button>
     </form>
-
-  )
+  );
 };
 
 export default Form;
