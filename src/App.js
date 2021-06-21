@@ -9,8 +9,7 @@ import { useEffect, useState } from "react";
 function App() {
   const [hideTasksDone, setHidetasksDone] = useState(false);
   const [tasks, setTasks] = useState(
-    JSON.parse(localStorage.getItem("tasks")) || []
-  );
+    JSON.parse(localStorage.getItem("tasks")) || [] );
 
   useEffect(() => {
     localStorage.setItem("tasks", JSON.stringify(tasks));
@@ -54,8 +53,7 @@ function App() {
       <Header title="Lista zadań" />
       <Section
         title="Dodaj nowe zadanie"
-        body={<Form addNewTask={addNewTask} />}
-      />
+        body={<Form addNewTask={addNewTask} />} />
       <Section
         title="Lista zadań"
         body={
