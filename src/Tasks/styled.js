@@ -17,3 +17,11 @@ export const Item = styled.li`
   display:none`
   }
 `;
+
+export const Content = styled.span`
+margin-left: 10px;
+  margin-right: 10px;
+
+  ${({done}) => done && css `
+  text-decoration: line-through;`}
+`;
