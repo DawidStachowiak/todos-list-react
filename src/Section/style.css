@@ -32,15 +32,3 @@
   font-size: 19px;
   padding: 5px;
 }
-
-
-.taskList__span {
-  margin-left: 10px;
-  margin-right: 10px;
-}
-
-.taskList__span--done {
-  text-decoration: line-through;
-}
-
-
