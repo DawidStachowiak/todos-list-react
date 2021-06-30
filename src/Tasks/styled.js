@@ -31,7 +31,7 @@ export const Content = styled.span`
     `}
 `;
 
-export const Button = styled.button`
+export const Buttons = styled.button`
   width: 35px;
   height: 35px;
   border: none;
