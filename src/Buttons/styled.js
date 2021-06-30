@@ -17,12 +17,12 @@ export const Button = styled.button`
   cursor: pointer;
   margin-right: 20px;
 
-  &:hover{
+  &:hover {
     color: rgb(2, 175, 175);
   }
 
-  &:disabled{
+  &:disabled {
     color: rgba(204, 204, 204, 0.953);
-  cursor: not-allowed;
+    cursor: not-allowed;
   }
 `;

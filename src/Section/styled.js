@@ -21,12 +21,11 @@ export const Item = styled.div`
   justify-content: space-between;
 
   @media (max-width: 768px) {
-  
     grid-template-columns: 1fr;
   }
 `;
 export const WrapperHeader = styled.h2`
-margin-left: 20px;
+  margin-left: 20px;
   font-size: 19px;
   padding: 5px;
 `;
