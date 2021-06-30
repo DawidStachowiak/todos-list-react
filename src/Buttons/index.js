@@ -1,22 +1,21 @@
-import "./style.css";
-
+import { ListButtonWrap, Button } from "./styled";
 const Buttons = ({ tasks, hideTasksDone, toggleHideDone, setAllDone }) => {
   if (!tasks.length) {
     return null;
   }
   return (
-    <div className="buttons">
-      <button onClick={toggleHideDone} className="buttons__button">
+    <ListButtonWrap>
+      <Button onClick={toggleHideDone} className="buttons__button">
         {hideTasksDone ? "Pokaż" : "Ukryj"} ukończone
-      </button>
-      <button
+      </Button>
+      <Button
         onClick={setAllDone}
         className="buttons__button "
         disabled={tasks.every(({ done }) => done)}
       >
         Ukończ wszystkie
-      </button>
-    </div>
+      </Button>
+    </ListButtonWrap>
   );
 };
 
