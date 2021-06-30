@@ -1,4 +1,4 @@
-import "./style.css";
+
 import { Wrapper, Item, WrapperHeader} from "./styled";
 const Section = ({ title, body, extraHeaderContent }) => (
   <Wrapper>
