@@ -1,9 +1,10 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 
 import { FormElement, Button, FormInput } from "./styled";
 
 const Form = ({ addNewTask }) => {
   const [newtaskContent, setNewTaskContent] = useState("");
+  const inputRef = useRef(null);
   const onFormSubmit = (event) => {
     event.preventDefault();
     if (newtaskContent.trim() === "") {
@@ -11,6 +12,7 @@ const Form = ({ addNewTask }) => {
     }
     addNewTask(newtaskContent.trim());
     setNewTaskContent("");
+    inputRef.current.focus();
   };
   return (
     <FormElement onSubmit={onFormSubmit}>
