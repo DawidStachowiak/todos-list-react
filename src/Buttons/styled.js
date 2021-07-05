@@ -22,7 +22,7 @@ export const Button = styled.button`
   }
 
   &:disabled {
-    color: rgba(204, 204, 204, 0.953);
+    color: ${({theme})=>theme.colors.silver};
     cursor: not-allowed;
   }
 `;

@@ -25,6 +25,7 @@ const Form = ({ addNewTask }) => {
         placeholder="Co jest do zrobienia?"
         onChange={(event) => setNewTaskContent(event.target.value)}
         required
+        ref={inputRef}
       />
       <Button>Dodaj zadanie</Button>
     </FormElement>

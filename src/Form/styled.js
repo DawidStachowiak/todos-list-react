@@ -7,7 +7,7 @@ export const FormElement = styled.form`
   justify-content: space-between;
   padding: 10px;
 
-  @media (max-width: 768px) {
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
     margin-top: 10px;
   }
 `;
@@ -20,17 +20,17 @@ export const Button = styled.button`
   text-align: center;
   transition: 0.3s;
   background-color: #2e747c;
-  color: white;
+  color: ${({theme})=>theme.colors.white};
   flex-grow: 0;
   margin-left: 20px;
   transition: 1s;
 
-  @media (max-width: 768px) {
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
     flex-basis: 100%;
     margin: 10px 0;
   }
   &:hover {
-    background-color: #3d858dc9;
+    background-color: ${({theme})=>theme.colors.darkerTeal  };
     transform: scale(1.1);
   }
 `;
@@ -43,7 +43,7 @@ export const FormInput = styled.input`
   border-radius: 2px;
   margin-left: 15px;
 
-  @media (max-width: 768px) {
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
     flex-basis: 100%;
     margin: 0px;
   }
