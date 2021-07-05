@@ -3,11 +3,11 @@ import styled from "styled-components";
 export const Wrapper = styled.div`
   margin: 10px 10px;
   display: grid;
-  background: white;
+  background: ${({theme})=>theme.colors.white};
   grid-row-gap: 2px;
   grid-auto-rows: minmax(65px, auto);
 
-  @media (max-width: 768px) {
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
     margin: 10px 15px;
   }
 `;
@@ -20,7 +20,7 @@ export const Item = styled.div`
   grid-gap: 10px;
   justify-content: space-between;
 
-  @media (max-width: 768px) {
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
     grid-template-columns: 1fr;
   }
 `;

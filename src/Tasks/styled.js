@@ -35,21 +35,21 @@ export const Buttons = styled.button`
   width: 35px;
   height: 35px;
   border: none;
-  color: #fff;
+  color: ${({theme})=>theme.colors.white};
   transition: 0.5s;
   cursor: pointer;
 
   ${({ toggleDone }) =>
     toggleDone &&
     css`
-      background-color: #008000;
-      &:hover background-color: #008000b7;
+      background-color: ${({theme})=>theme.colors.japaneseLaurel};
+      &:hover background-color:${({theme})=>theme.colors.japaneseLaurelLight};
     `}
 
   ${({ remove }) =>
     remove &&
     css`
-      background-color: #eb293c;
-      &:hover background-color: #eb293cb4;
+      background-color: ${({theme})=>theme.colors.alizarinCrimson};
+      &:hover background-color: ${({theme})=>theme.colors.alizarinCrimsonLight};
     `}
 `;

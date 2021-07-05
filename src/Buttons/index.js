@@ -1,10 +1,10 @@
-import { ListButtonWrap, Button } from "./styled";
+import { ButtonContainer, Button } from "./styled";
 const Buttons = ({ tasks, hideTasksDone, toggleHideDone, setAllDone }) => {
   if (!tasks.length) {
     return null;
   }
   return (
-    <ListButtonWrap>
+    <ButtonContainer>
       <Button onClick={toggleHideDone} className="buttons__button">
         {hideTasksDone ? "Pokaż" : "Ukryj"} ukończone
       </Button>
@@ -15,7 +15,7 @@ const Buttons = ({ tasks, hideTasksDone, toggleHideDone, setAllDone }) => {
       >
         Ukończ wszystkie
       </Button>
-    </ListButtonWrap>
+    </ButtonContainer>
   );
 };
 

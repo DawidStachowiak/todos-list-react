@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const ListButtonWrap = styled.div`
+export const ButtonContainer = styled.div`
   display: flex;
 
   @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
